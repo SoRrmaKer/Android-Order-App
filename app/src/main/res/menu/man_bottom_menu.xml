@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/main_manage_bottom_menu_home"
+        android:title="Home"
+        app:showAsAction="always"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:id="@+id/main_manage_bottom_menu_add"
+        android:title="Add"
+        app:showAsAction="always"
+        android:icon="@drawable/plus"
+        />
+    <item
+        android:id="@+id/main_manage_bottom_menu_my"
+        android:title="User"
+        app:showAsAction="always"
+        android:icon="@drawable/user"
+        />
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrderSystem" >
+        <activity
+            android:name=".activity.manage.ManageMainUpdateFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.ManageMainEditInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.ManageOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.ManageMainPwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.ManageCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.ManageHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.ManageMainAddFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.ManageMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.manage.RegisterMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ConfirmOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserShopDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserEditInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserChangePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserHistoryOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.UserAddReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

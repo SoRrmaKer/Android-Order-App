@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ThemeBlue"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:id="@+id/u_profile_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/uploadimg"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/u_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/u_profile_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account: 123456"
+                android:textColor="#EEE"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_u_history"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/order"
+                app:tint="@color/ThemeBlue"/> <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="History Orders"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:layout_marginLeft="15dp"/>
+
+ </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_u_edit_info"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/edit"
+                app:tint="@color/ThemeBlue"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit Profile"
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1px" android:background="#F0F0F0"/>
+
+        <LinearLayout
+            android:id="@+id/btn_u_change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/changepwd"
+                app:tint="@color/ThemeBlue"/> <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Change Password"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/btn_u_delete_acc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Delete Account"
+            android:textColor="#F44336"
+            android:textSize="16sp"
+            android:background="@color/white"
+            android:gravity="center"/>
+
+        <View android:layout_width="match_parent" android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/btn_u_logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Log Out"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:background="@color/white"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

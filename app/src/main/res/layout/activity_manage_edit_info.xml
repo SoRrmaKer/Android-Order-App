@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_info_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ThemeBlue"
+        app:title="Edit Shop Info"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/edit_info_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/uploadimg"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/img_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to change logo"
+                android:layout_marginTop="10dp"
+                android:textColor="#888"/>
+
+            <EditText
+                android:id="@+id/edit_info_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shop Name"
+                android:layout_marginTop="30dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <EditText
+                android:id="@+id/edit_info_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shop Type (e.g. Fast Food)"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_info_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/edit_info_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:background="@color/ThemeBlue"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

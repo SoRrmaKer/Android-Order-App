@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/img_round"
+        >
+
+        <ImageView
+            android:id="@+id/man_foodlist_foodImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/jollibee"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerCrop"
+            android:paddingLeft="5dp"
+            android:background="@drawable/img_round"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/man_foodlist_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jollibee"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/man_foodlist_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Month Sold: 193"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/man_foodlist_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: 59.50"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/ThemeBlue"
+                />
+
+            <TextView
+                android:id="@+id/man_foodlist_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:gravity="left"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

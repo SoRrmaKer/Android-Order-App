@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal"
+    tools:context=".activity.manage.ManageMainUpdateFoodActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_manage_updateFood_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ThemeBlue"
+        app:title="Update Item"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <ImageView
+                android:id="@+id/main_manage_updateFood_img"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/uploadimg"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Image"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <EditText
+                android:id="@+id/main_manage_updateFood_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please Enter the Name"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/main_manage_updateFood_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please Enter the Price"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/main_manage_updateFood_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please Enter the Description"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:maxLines="5"
+                android:background="@android:drawable/edit_text"/>
+
+            <Button
+                android:id="@+id/main_manage_updateFood_updateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_marginTop="10dp"
+                android:background="@color/ThemeBlue"
+                android:textColor="@color/white"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

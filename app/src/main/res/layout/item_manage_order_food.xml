@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/item_food_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/jollibee"
+        android:scaleType="centerCrop"
+        android:background="@drawable/img_round"/>
+
+    <TextView
+        android:id="@+id/item_food_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="Food Name"
+        android:textColor="#333"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/item_food_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x 1"
+        android:textColor="#999"
+        android:textSize="12sp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/item_food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥ 218.46"
+        android:textColor="#666"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cart_bar_root"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/img_round"
+    android:backgroundTint="#333333"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:elevation="10dp"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/btn_cart_popup"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/orderapp"
+            android:layout_marginLeft="5dp"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/cart_badge_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:text="1"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/img_round"
+            android:backgroundTint="@color/ThemeBlue"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cart_total_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="¥ 0.00"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/btn_checkout"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:text="Check Out"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/img_round"
+        android:backgroundTint="@color/ThemeBlue"/>
+</LinearLayout>

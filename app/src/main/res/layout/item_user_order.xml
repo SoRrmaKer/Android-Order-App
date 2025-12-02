@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/img_round"
+    android:backgroundTint="@color/white"
+    android:padding="15dp"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/u_order_merchant_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/uploadimg"
+            android:scaleType="centerCrop"
+            android:background="@drawable/img_round"/>
+
+        <TextView
+            android:id="@+id/u_order_merchant_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="Shop Name"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/u_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textColor="#FF9800"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/u_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2023-12-09 14:00"
+        android:textColor="#999"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F0F0F0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/u_order_items_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F0F0F0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/u_order_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address: ..."
+        android:textSize="12sp"
+        android:textColor="#666"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:textColor="#666"/>
+
+        <TextView
+            android:id="@+id/u_order_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="¥ 100.00"
+            android:textColor="@color/ThemeBlue"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/u_order_action_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_u_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Cancel"
+                android:textSize="12sp"
+                android:backgroundTint="#9E9E9E"
+                android:textColor="@color/white"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id="@+id/btn_u_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Received"
+                android:textSize="12sp"
+                android:backgroundTint="@color/ThemeBlue"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_u_review"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Review"
+                android:textSize="12sp"
+                android:backgroundTint="#FF9800"
+                android:textColor="@color/white"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
